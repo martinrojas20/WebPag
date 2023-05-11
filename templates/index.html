@@ -1,0 +1,46 @@
+{% extends './layout.html' %}
+{% block title %}
+{{data.titulo}}
+{% endblock %}
+
+{% block body %}
+<nav>
+    <input type="checkbox" id="checkbox">
+    <label for="checkbox" class="checkbtn">
+        <span class="material-symbols-outlined">
+            menu
+        </span>               
+    </label>
+    <a href="#" class="enlace">
+        <img src="..\static\img\logo.jpg" class="logo" alt="">
+    </a>
+    <ul>
+        <li><a href="#" class="active">Inicio</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+    </ul>
+</nav>
+<section></section>
+<h1>{{data.bienvenida}}</h1>
+
+<div class="galeria">
+    <div class="foto">
+        <img src="..\static\img\bmw.jpg" alt="">
+        <div class="pie">
+            <p>Camioneta BMW 2023</p>
+            <button class="btn_ir">Ir</button>
+        </div>
+    </div>
+</div>  
+<div class="galeria">
+    <div class="foto">
+        <img src="..\static\img\bmw1.jpg" alt="">
+        <div class="pie">
+            <p>Camioneta  2 BMW 2023</p>
+            <button class="btn_ir">Ir</button>
+        </div>
+    </div>
+</div>   
+<p class="pp">{{preference}}</p>
+
+{% endblock %}
